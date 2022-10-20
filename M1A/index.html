@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div>
+    <h1>Mortgage Calculator</h1>
+    <h3>Module 1 Assignment</h3>
+    <br>
+    <form id="calculator" onsubmit="calculatePayment();return false;">
+    <!--  Return false prevents reload, for some reason?  -->
+        <table>
+            <tr>
+                <td><label for="principal">Loan Principal ($)</label></td>
+                <td><input id="principal" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="interestRate">Interest (APR)</label></td>
+                <td><input id="interestRate" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="loanLength">Loan Length (Years)</label></td>
+                <td><input id="loanLength" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="payPeriod">Pay Period</label></td>
+                <td>
+                    <select id="payPeriod">
+                        <option value="52">Weekly</option>
+                        <option value="26">Bi-Weekly</option>
+                        <option value="12">Monthly</option>
+                        <option value="6">Bi-Monthly</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input id="submit" type="submit" value="Calculate!">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id="resultArea">
+        <h2>Result:</h2>
+        <h1 id="result"></h1>
+        <h3 id="payPeriodResult"></h3>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
