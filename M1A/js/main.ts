@@ -36,8 +36,8 @@ function calculatePayment() {
     payPeriodResult.innerText = `(${periodsToText(_payPeriod)})`;
 }
 
-function periodsToText(num: number):string {
-    switch(num) {
+function periodsToText(num: number): string {
+    switch (num) {
         case 52:
             return "due weekly";
         case 26:
@@ -48,4 +48,5 @@ function periodsToText(num: number):string {
             return "due alternating months";
     }
 }
+
 //End

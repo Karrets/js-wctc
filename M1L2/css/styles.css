@@ -1,0 +1,19 @@
+* {
+  margin: 2.5pt 0 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+}
+
+body {
+  padding-left: 5pt;
+}
+
+input[readonly] {
+  border: none;
+}
+
+input[type=button] {
+  padding: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */
