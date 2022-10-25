@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Area Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <h1>
+        Cameron - Mod 2 Lab 1
+    </h1>
+</header>
+<nav>
+    <ul>
+        <li><input type="button" onclick="RedirectToPath('index')" value="Go Back"></li>
+        <li><input type="button" onclick="RedirectToPath('area')" value="Area Calculator"></li>
+        <li><input type="button" onclick="RedirectToPath('random')" value="Random Number"></li>
+        <li><input type="button" onclick="RedirectToPath('date')" value="Date Info"></li>
+    </ul>
+</nav>
+<main>
+    <div id="widget">
+        <h3>Area: <span id="resultArea">50</span></h3>
+        <form onclick="return false;">
+            <label for="length">Length</label>
+            <input type="number" id="length" value="10">
+            <br>
+            <label for="width">Length</label>
+            <input type="number" id="width" value="5">
+        </form>
+        <br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">Function Documentation</a>
+    </div>
+</main>
+<footer></footer>
+
+<script src="js/main.js"></script>
+<script src="js/area.js"></script>
+</body>
+</html>

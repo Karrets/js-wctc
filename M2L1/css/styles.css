@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  background-color: #EAEAEA;
+}
+
+header {
+  padding: 5pt;
+  background-color: #3C4048;
+  color: #EAEAEA;
+}
+
+nav {
+  background-color: #00ABB3;
+}
+
+main {
+  padding-top: 5pt;
+}
+
+input[type=button] {
+  color: #15133C;
+  padding: 10px;
+  cursor: pointer;
+}
+
+a {
+  color: #15133C;
+}
+
+#widget {
+  margin: auto;
+  width: max-content;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  padding-top: 10pt;
+  padding-bottom: 10pt;
+}
+nav ul {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5pt;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li input {
+  padding: 1pt;
+  text-decoration: underline;
+}
+
+label, input {
+  margin-top: 2pt;
+}
+
+/*# sourceMappingURL=styles.css.map */
