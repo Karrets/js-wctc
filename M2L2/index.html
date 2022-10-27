@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mod 2 Lab 2</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Module 2: Lab 2</h1>
+    </header>
+    <br>
+    <main>
+        <div id="widget">
+            <form id="petForm" action="javascript:addPet();">
+                <table>
+                    <tr>
+                        <th colspan="2">
+                            <h3>Pet Form</h3>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td><label for="petName">Name:</label></td>
+                        <td><input id="petName" type="text" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="petBirthday">Birthday:</label></td>
+                        <td><input id="petBirthday" type="date" name="birthday" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Add Pet">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div id="petHolder">
+                <div id="blankPet">
+                    <h6 class="petName"></h6>
+                    <h6 class="petBirthday"></h6>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/pet.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/*
+ * let myObj = {
+ *    color: "Red",
+ *    alertColor: function() {
+ *        alert(this.color);
+ *    },
+ * };
+ *
+ * myObj.alertColor();
+ * console.log(myObj)
+*/
+
+function Widget():void {
+    this.color = 'red';
+
+    return this;
+}
+
+let myWidget = new Widget();
+
+console.log(myWidget);
