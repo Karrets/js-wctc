@@ -16,7 +16,7 @@ function maxChange():void {
 }
 
 function genRandom():void {
-    resultArea.textContent = String(Math.floor(Math.random() * cap));
+    resultArea.textContent = String(Math.floor(Math.random() * cap + 1));
 }
 
 maxChange();

@@ -14,7 +14,7 @@ function maxChange() {
     genRandom();
 }
 function genRandom() {
-    resultArea.textContent = String(Math.floor(Math.random() * cap));
+    resultArea.textContent = String(Math.floor(Math.random() * cap + 1));
 }
 maxChange();
 //# sourceMappingURL=random.js.map
