@@ -10,7 +10,6 @@ let pets = [];
 function addPet() {
     let petName = petNameInput.value;
     let petBirthday = petBirthdayInput.valueAsDate;
-    debugger;
     let newPet = new Pet(petName, petBirthday);
     pets.push(newPet);
     //Add elements
@@ -23,8 +22,7 @@ function addPet() {
     petBirthdayElement.classList.add('petBirthday');
     //add click action
     petElement.onclick = function () {
-        petElement.remove();
-        newPet.delete();
+        newPet.delete(petElement);
     };
     //Add content
     petNameElement.textContent = newPet.name;

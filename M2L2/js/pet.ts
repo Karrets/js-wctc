@@ -7,7 +7,12 @@ class Pet {
         this.birthday = birthday;
     }
 
-    delete():void {
-        alert(this.name + ' has been deleted.');
+    delete(element: HTMLDivElement):void {
+        if(confirm(`Delete ${this.name}?`)) {
+            element.style.opacity = '0';
+            element.style.transform = 'scale(0)';
+            setTimeout(() => element.remove(), 500);
+            //https://stackoverflow.com/a/33424363 Help with cool transition!
+        }
     }
 }

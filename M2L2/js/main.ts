@@ -11,7 +11,7 @@ let pets: Array<Pet> = [];
 function addPet() {
     let petName = petNameInput.value;
     let petBirthday = petBirthdayInput.valueAsDate;
-    debugger;
+    
     let newPet = new Pet(petName, petBirthday) as Pet;
     pets.push(newPet);
 
@@ -27,8 +27,7 @@ function addPet() {
 
     //add click action
     petElement.onclick = function() {
-        petElement.remove();
-        newPet.delete();
+        newPet.delete(petElement);
     };
 
     //Add content

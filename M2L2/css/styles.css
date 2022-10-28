@@ -18,7 +18,7 @@ header {
   box-shadow: #15133C 2px 2px;
 }
 
-#widget {
+.widget {
   width: 50%;
   padding: 5pt 10pt;
   margin: auto;
@@ -30,6 +30,20 @@ header {
 
 table {
   width: 100%;
+}
+table tr td {
+  width: 50%;
+}
+table tr td * {
+  width: 100%;
+}
+
+.pet {
+  background: #FEFEFE;
+  padding: 1pt;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
 }
 
 /*# sourceMappingURL=styles.css.map */
