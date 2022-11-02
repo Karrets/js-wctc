@@ -1,0 +1,71 @@
+$c1: #F2F2F2;
+$c2: #f8f8f8;
+$c3: #ffe8e0;
+$c4: #A6583C;
+$c5: #423631;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+body {
+  background: $c5;
+}
+
+header {
+  padding-bottom: 5pt;
+  background: $c4;
+
+  h1 {
+    color: $c2;
+  }
+
+  h4 {
+    color: darken($c2, 5%);
+  }
+}
+
+.widget {
+  margin: 10pt;
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+  border-radius: 10pt;
+  height: 75vh;
+  overflow: scroll;
+  background: $c3;
+}
+
+main {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  gap: 25pt;
+}
+
+form * {
+  font-size: 14pt;
+  margin-right: 2pt;
+  margin-left: 2pt;
+  box-sizing:content-box;
+  width: 95%;
+}
+
+td {
+  width: 75%;
+}
+
+.formLabel {
+  width: 25%
+}
+
+input[type=submit] {
+  padding: 2pt;
+  margin: 3pt;
+  width: 50%;
+}

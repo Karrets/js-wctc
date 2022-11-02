@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Module 3 Lab 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <h1>Module 2 Assignment</h1>
+    <h4>Cameron P.</h4>
+</header>
+<main>
+    <div id="leftBox" class="widget">
+        <form action="javascript:formSubmit()" id="studentForm">
+            <table>
+                <thead>
+                <tr>
+                    <td colspan="2">Student Form</td>
+                </tr>
+                </thead>
+                <tr>
+                    <td class="formLabel"><label for="studentFName">First Name</label></td>
+                    <td><input type="text" id="studentFName" required></td>
+                </tr>
+                <tr>
+                    <td class="formLabel"><label for="studentLName">Last Name</label></td>
+                    <td><input type="text" id="studentLName" required></td>
+                </tr>
+                <tr>
+                    <td class="formLabel"><label for="studentProgram">Program</label></td>
+                    <td><select id="studentProgram" required>
+                        <option disabled selected value> Select a Program</option>
+                        <option value="IT - Computer Support Specialist">IT - Computer Support Specialist</option>
+                        <option value="IT - Cyber-security Specialist">IT - Cybersecurity Specialist</option>
+                        <option value="IT - Data and Analytics Specialist">IT - Data and Analytics Specialist</option>
+                        <option value="IT - Network Specialist">IT - Network Specialist</option>
+                        <option value="IT - Web and Software Developer">IT - Web and Software Developer</option>
+                        <option value="Front End Web Development">Front End Web Development</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td class="formLabel"><label for="studentEnrollDate">Enroll Date</label></td>
+                    <td><input type="date" id="studentEnrollDate" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Add Student">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="rightBox" class="widget">
+        <div id="studentViewer">
+
+        </div>
+    </div>
+</main>
+<script src="js/student.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
