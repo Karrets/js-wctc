@@ -20,27 +20,35 @@
         <div class="content">
             <h2>Odd/Even</h2>
             <p>Check if odd or even</p>
-            <label for="">Number</label>
-            <input id="" type="number" onchange="">
+            <label for="OddEvenInput">Number</label>
+            <input id="OddEvenInput" type="number" onchange="oddEven()">
         </div>
 
         <div class="content">
             <h2>Confirm</h2>
+            <p id="confirmResult">Click the button to confirm</p>
+            <input type="button" onclick="widgetConfirm()" value="Click Me!">
         </div>
 
         <div class="content">
             <h2>Text Truthy/Falsy</h2>
+            <p id="textTruthyResult">Test is values are true or false.</p>
+            <label for="textTruthyInput">Enter Text</label>
+            <input type="text" id="textTruthyInput" onchange="textTruthy()">
         </div>
 
         <div class="content">
             <h2>Numeric Truthy/Falsy</h2>
+            <p id="numericTruthyResult">Test is values are true or false.</p>
+            <label for="numericTruthyInput">Enter Numbers</label>
+            <input type="number" id="numericTruthyInput" onchange="numericTruthy()">
         </div>
 
         <div class="content">
             <h2>AM or PM</h2>
             <p id="AMPMResult">Test if it is day or night</p>
             <button onclick="
-            AMPM(document.getElementById('AMPMResult'));">
+            widgetAMPM(document.getElementById('AMPMResult'));">
                 Check if it is AM or PM
             </button>
         </div>
@@ -48,16 +56,16 @@
         <div class="content">
             <h2>Logical And</h2>
             <h3>Value 1:</h3>
-            <input onchange="LogicalAnd()" type="radio" name="logicalAndValueOne" id="logicalAndValueOneTrue">
+            <input onchange="logicalAnd()" type="radio" name="logicalAndValueOne" id="logicalAndValueOneTrue">
             <label for="logicalAndValueOneTrue">true</label>
-            <input onchange="LogicalAnd()" type="radio" name="logicalAndValueOne" id="logicalAndValueOneFalse" checked>
+            <input onchange="logicalAnd()" type="radio" name="logicalAndValueOne" id="logicalAndValueOneFalse" checked>
             <label for="logicalAndValueOneFalse">false</label>
 
             <br><br>
             <h3>Value 2:</h3>
-            <input onchange="LogicalAnd()" type="radio" name="logicalAndValueTwo" id="logicalAndValueTwoTrue">
+            <input onchange="logicalAnd()" type="radio" name="logicalAndValueTwo" id="logicalAndValueTwoTrue">
             <label for="logicalAndValueTwoTrue">true</label>
-            <input onchange="LogicalAnd()" type="radio" name="logicalAndValueTwo" id="logicalAndValueTwoFalse" checked>
+            <input onchange="logicalAnd()" type="radio" name="logicalAndValueTwo" id="logicalAndValueTwoFalse" checked>
             <label for="logicalAndValueTwoFalse">false</label>
 
             <br>
@@ -66,11 +74,36 @@
         </div>
 
         <div class="content">
-            <h2>Logical Or</h2>
+            <h2>Logical Or</h2><h3>Value 1:</h3>
+            <input onchange="logicalOr()" type="radio" name="logicalOrValueOne" id="logicalOrValueOneTrue">
+            <label for="logicalOrValueOneTrue">true</label>
+            <input onchange="logicalOr()" type="radio" name="logicalOrValueOne" id="logicalOrValueOneFalse" checked>
+            <label for="logicalOrValueOneFalse">false</label>
+
+            <br><br>
+            <h3>Value 2:</h3>
+            <input onchange="logicalOr()" type="radio" name="logicalOrValueTwo" id="logicalOrValueTwoTrue">
+            <label for="logicalOrValueTwoTrue">true</label>
+            <input onchange="logicalOr()" type="radio" name="logicalOrValueTwo" id="logicalOrValueTwoFalse" checked>
+            <label for="logicalOrValueTwoFalse">false</label>
+
+            <br>
+            <br>
+            <p id="logicalOrResult">Check the boxes to see the output</p>
         </div>
 
         <div class="content">
             <h2>Switch Statement</h2>
+            <p>Enter text and then select an output type</p>
+            <label for="switchText">Text to Output</label>
+            <input type="text" id="switchText">
+            <label for="switchOutput">Text to Output</label>
+            <select id="switchOutput" onchange="widgetSwitch()">
+                <option value="_alert">Alert</option>
+                <option value="_clog">Log</option>
+                <option value="_text">Text Content</option>
+            </select>
+            <p id="switchResult"></p>
         </div>
 
     </div>

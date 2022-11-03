@@ -8,6 +8,10 @@ header {
   padding: 30px;
 }
 
+main {
+  margin-bottom: 10pt;
+}
+
 h1 {
   text-align: center;
 }
@@ -37,6 +41,10 @@ h1 {
   padding: 5px;
   font-size: 18px;
   margin-bottom: 10px;
+}
+
+.container .content select {
+  width: 210px;
 }
 
 .container .content input[type="radio"] {
