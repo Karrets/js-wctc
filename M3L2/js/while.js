@@ -6,6 +6,8 @@ let whileLoopTwoCount = document.getElementById('whileLoopTwoCount');
 //End
 //Test One
 function whileTestOne() {
+    whileLoopResultOne.innerHTML = '';
+
     let i = 0;
     while(confirm('Continue Looping?')) {
         whileLoopResultOne.textContent += i++ + ' ';
@@ -14,8 +16,9 @@ function whileTestOne() {
 //End
 //Test Two
 function whileTestTwo() {
-    let i = 0;
+    whileLoopResultTwo.innerHTML = '';
 
+    let i = 0;
     while(i <= whileLoopTwoCount.valueAsNumber) {
         whileLoopResultTwo.textContent += i++ + ' '
     }

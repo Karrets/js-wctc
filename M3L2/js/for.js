@@ -37,10 +37,9 @@ let people = [
 // console.log(people.length);
 //End
 //Test One
+forLoopResultOne.innerHTML = '';
 for (let i = 0; i < 10; i++) {
-    forLoopResultOne.innerHTML = '';
-
-    forLoopResultOne.textContent += i + ' ';
+    forLoopResultOne.textContent += (i + ' ');
 }
 //End
 //Test Two
