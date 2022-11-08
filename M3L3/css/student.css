@@ -1,0 +1,36 @@
+.student {
+    color: var(--cust-text-color);
+    border-left: var(--cust-accent-color) 1px solid;
+    border-right: var(--cust-accent-color) 1px solid;
+    text-align: center;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    margin: 6pt;
+}
+
+.student-name {
+    font-weight: bold;
+}
+
+.student-name::after {
+    content: '\a';
+    white-space: pre;
+}
+
+.student-program {
+    font-style: italic;
+}
+
+.student-program::after {
+    content: '\a';
+    white-space: pre;
+}
+
+.student-semester {
+    font-size: 10pt;
+}
+
+.student-semester::after {
+    content: '\a';
+    white-space: pre;
+}

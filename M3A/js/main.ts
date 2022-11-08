@@ -1,7 +1,13 @@
 //DOM
-const selectionForm = document.getElementById('selectors') as HTMLFormElement;
-const restaurantList = document.getElementById('restaurantList') as HTMLDivElement;
+const selectionForm = document.getElementById('selectorForm') as HTMLFormElement;
+const selectionGluten = document.getElementById('gluten') as HTMLInputElement;
+const selectionVegan = document.getElementById('vegan') as HTMLInputElement;
+const selectionVegetarian = document.getElementById('vegetarian') as HTMLInputElement;
+Restaurant.wouldBeParent = document.getElementById('restaurantList') as HTMLDivElement;
 //End DOM
+//Events
+selectionForm.addEventListener("submit", applyRestrictions);
+//End Events
 //Vars
 const restaurants: Restaurant[] = [
     new Restaurant('Macho Meals'   , '337 St Paul Ave.'    , false, false, false),
@@ -16,5 +22,19 @@ const restaurants: Restaurant[] = [
     new Restaurant('Andisova'      , '474 Mayfield Ave.'   , true , false, false)
 ];
 
-
+const availableRestaurants: Restaurant[] = [];
 //End Vars
+
+function applyRestrictions(event: Event) {
+    if(event) event.preventDefault();
+
+    for(let i = 0; i < restaurants.length; i++) {
+        if(restaurants[i].matches(selectionGluten.checked, selectionVegan.checked, selectionVegetarian.checked)) {
+            restaurants[i].show();
+        } else {
+            restaurants[i].hide();
+        }
+    }
+}
+
+applyRestrictions(null);

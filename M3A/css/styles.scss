@@ -1,0 +1,67 @@
+$bg: #F2E9E4;
+$bg-accent: #C9ADA7;
+$fg: #22223B;
+$fg-accent
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: Verdana, sans-serif, SansSerif;
+}
+
+body {
+  background: $bg;
+  color: $fg;
+}
+
+header {
+  width: 80%;
+  margin: 5pt auto;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+form {
+  width: max-content;
+  margin: 2pt;
+  padding: 2pt;
+}
+
+input {
+  margin: 2pt;
+  padding: 2pt;
+}
+
+#selectors {
+  display: flex;
+  flex-direction: row;
+}
+
+#selectors > * {
+  flex-grow: 1;
+}
+
+#restaurantList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5pt;
+}
+
+#restaurantList > * {
+  flex-grow: 1;
+}
+
+.restaurant {
+  width: 200px;
+  margin: auto;
+  padding: 2pt;
+  border: #3C4048 1px solid;
+  border-radius: 3pt;
+
+  background: $bg-accent;
+}
