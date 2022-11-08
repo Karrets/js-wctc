@@ -11,6 +11,10 @@ class Student {
         this.enrollDate = enrollDate;
     }
 
+    alertSelf() {
+        alert(`${this.fName} ${this.lName} enrolled in ${this.program} on ${this.enrollDate.toDateString()}`)
+    }
+
     buildElement(base: HTMLElement) {
         //Create Elements
         let studentDiv = document.createElement("div");
@@ -44,6 +48,12 @@ class Student {
         enrollDateHeaderElem.innerText = 'Enrolled:';
         enrollDateElem.innerText = this.enrollDate.toDateString();
         //End
+        //Add Events
+        let instance = this;
+        studentDiv.onclick = function() {
+            instance.alertSelf();
+        };
+        //END
         //Attach to DOM
         base.appendChild(studentDiv);
         //End
