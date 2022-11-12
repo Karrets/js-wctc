@@ -1,17 +1,93 @@
-/* Error: expected ":".
- *   ,
- * 4 | $fg-accent
- *   |           ^
- *   '
- *   styles.scss 4:11  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ":".\a   \2577 \a 4 \2502  $fg-accent\d\a   \2502            ^\a   \2575 \a   styles.scss 4:11  root stylesheet';
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif, SansSerif;
 }
+
+body {
+  background: white;
+}
+
+#title {
+  background: #99ffaf;
+}
+
+form {
+  width: 100%;
+}
+
+.inputGroup {
+  border: 1px solid;
+  border-radius: 5pt;
+  background: #80d9ff;
+}
+
+.inputGroup > * {
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: auto;
+}
+
+input[type=checkbox] {
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type=submit] {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding: 5pt;
+  margin-top: 5pt;
+  margin-bottom: 5pt;
+  border: 1px solid;
+  border-radius: 5pt;
+}
+
+.floater {
+  width: 80%;
+  padding: 10pt;
+  margin: 10pt auto;
+  border: 1px solid;
+  border-radius: 5pt;
+  box-shadow: 2px 2px 3px;
+  background: #c3ffde;
+}
+
+#selectors {
+  display: flex;
+  flex-direction: row;
+  gap: 5pt;
+  flex-wrap: wrap;
+}
+
+#selectors > * {
+  flex-grow: 1;
+  margin: auto;
+}
+
+#restaurantList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5pt;
+  padding: 5pt;
+}
+
+#restaurantList > * {
+  flex-grow: 1;
+  gap: 5pt;
+  padding: 5pt;
+}
+
+.restaurant {
+  margin: auto;
+  border: 1px solid;
+  border-radius: 3pt;
+}
+
+/*# sourceMappingURL=styles.css.map */

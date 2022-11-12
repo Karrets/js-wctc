@@ -7,23 +7,41 @@
 </head>
 <body>
     <header>
-        <h1>Module 3 Assignment: Restaurant Picker</h1>
-    </header>
-    <hr>
-    <main>
-        <div id="selectors">
-            <form id="selectorForm">
-                <input id="gluten" type="checkbox">
-                <label for="gluten">Gluten Free</label>
-                <input id="vegan" type="checkbox">
-                <label for="vegan">Vegan</label>
-                <input id="vegetarian" type="checkbox">
-                <label for="vegetarian">Vegetarian</label>
-                <input id="submit" type="submit" value="submit">
-            </form>
+        <div class="floater" id="title">
+            <h1>Module 3 Assignment: Restaurant Picker</h1>
         </div>
-        <div id="restaurantList">
+    </header>
+    <main>
+        <div class="floater">
+            <div id="selectorPanel">
+                <h3>Select your dietary restrictions:</h3>
+                <form id="selectorForm">
+                    <div id="selectors">
+                        <div class="inputGroup">
+                            <div>
+                                <input id="gluten" type="checkbox">
+                                <label for="gluten">Gluten Free</label>
+                            </div>
+                        </div>
+                        <div class="inputGroup">
+                            <div>
+                                <input id="vegan" type="checkbox">
+                                <label for="vegan">Vegan</label>
+                            </div>
+                        </div>
+                        <div class="inputGroup">
+                            <div>
+                                <input id="vegetarian" type="checkbox">
+                                <label for="vegetarian">Vegetarian</label>
+                            </div>
+                        </div>
+                    </div>
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+            </div>
+            <div id="restaurantList">
 
+            </div>
         </div>
     </main>
     <script src="js/restaurant.js"></script>
